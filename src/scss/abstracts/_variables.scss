@@ -1,0 +1,17 @@
+// Media queries
+$layout-breakpoints: (
+  // Small devices portrait
+  xsmall: 320px,
+  // Small tablets and large smartphones (landscape view)
+  small: 568px,
+  // Small tablets (portrait view)
+  medium: 768px,
+  // Tablets and small desktops
+  large: 992px,
+  // Large tablets and desktops
+  xlarge: 1200px,
+  // 2K,
+  2k: 2160px,
+  // 4K,
+  4k: 3000px
+);
