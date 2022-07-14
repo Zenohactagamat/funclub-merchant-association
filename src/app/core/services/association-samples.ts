@@ -4,7 +4,7 @@ export const associationSamples = [
     name: 'Funclub 35',
     category: 'Danse',
     activity: 'Rock',
-    logo: 'logo.jpg',
+    logo: 'https://picsum.photos/200',
     description: `Une asso qui bouge, sauf en été.
 
       Profitez d'une semaine gratuite supplémentaire !`,
@@ -21,7 +21,7 @@ export const associationSamples = [
     name: 'Funclub 36',
     category: 'Danse',
     activity: 'Rock',
-    logo: 'logo.jpg',
+    logo: 'https://picsum.photos/200',
     description: `Une asso qui bouge, sauf en été.
 
       Profitez d'une semaine gratuite supplémentaire !`,
@@ -38,7 +38,7 @@ export const associationSamples = [
     name: 'Funclub 37',
     category: 'Danse',
     activity: 'Rock',
-    logo: 'logo.jpg',
+    logo: 'https://picsum.photos/200',
     description: `Une asso qui bouge, sauf en été.
 
       Profitez d'une semaine gratuite supplémentaire !`,

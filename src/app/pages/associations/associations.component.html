@@ -1,1 +1,14 @@
-<p>associations works!</p>
+<h1>Choisissez une association</h1>
+
+<div class="associations">
+  <mat-card *ngFor="let association of associations">
+    <img mat-card-avatar [src]="association.logo">
+    <mat-card-title>{{association.name}}</mat-card-title>
+    <mat-card-subtitle>{{association.category}} - {{association.activity}}</mat-card-subtitle>
+    <mat-card-content>
+      {{association.description}}
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
+</div>
