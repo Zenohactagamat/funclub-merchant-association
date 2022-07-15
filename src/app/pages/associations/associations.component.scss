@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+.associations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.association-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 1rem;
+
+  mat-card-actions {
+    text-align: center;
+  }
+}

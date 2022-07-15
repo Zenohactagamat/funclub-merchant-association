@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -10,7 +11,7 @@ import { AppRoutingModule } from './routing/app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, AssociationsComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, CoreModule, MatCardModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, CoreModule, MatCardModule, MatButtonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
