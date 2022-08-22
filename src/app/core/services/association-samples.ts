@@ -50,4 +50,89 @@ export const associationSamples = [
       },
     ],
   },
+  {
+    uuid: 'JNBCC452452C26sdc1s5dcs',
+    name: 'Funclub 37',
+    category: 'Danse',
+    activity: 'Rock',
+    logo: 'https://picsum.photos/200',
+    description: `Une asso qui bouge, sauf en été.
+
+      Profitez d'une semaine gratuite supplémentaire !`,
+    availableCoupons: [
+      {
+        startDate: new Date('2022-09-01T00:00:00'),
+        endDate: new Date('2022-09-31T00:00:00'),
+        duration: null,
+      },
+    ],
+  },
+  {
+    uuid: 'JNBCC452452C26sdc1s5dcs',
+    name: 'Funclub 37',
+    category: 'Danse',
+    activity: 'Rock',
+    logo: 'https://picsum.photos/200',
+    description: `Une asso qui bouge, sauf en été.
+
+      Profitez d'une semaine gratuite supplémentaire !`,
+    availableCoupons: [
+      {
+        startDate: new Date('2022-09-01T00:00:00'),
+        endDate: new Date('2022-09-31T00:00:00'),
+        duration: null,
+      },
+    ],
+  },
+  {
+    uuid: 'JNBCC452452C26sdc1s5dcs',
+    name: 'Funclub 37',
+    category: 'Danse',
+    activity: 'Rock',
+    logo: 'https://picsum.photos/200',
+    description: `Une asso qui bouge, sauf en été.
+
+      Profitez d'une semaine gratuite supplémentaire !`,
+    availableCoupons: [
+      {
+        startDate: new Date('2022-09-01T00:00:00'),
+        endDate: new Date('2022-09-31T00:00:00'),
+        duration: null,
+      },
+    ],
+  },
+  {
+    uuid: 'JNBCC452452C26sdc1s5dcs',
+    name: 'Funclub 37',
+    category: 'Danse',
+    activity: 'Rock',
+    logo: 'https://picsum.photos/200',
+    description: `Une asso qui bouge, sauf en été.
+
+      Profitez d'une semaine gratuite supplémentaire !`,
+    availableCoupons: [
+      {
+        startDate: new Date('2022-09-01T00:00:00'),
+        endDate: new Date('2022-09-31T00:00:00'),
+        duration: null,
+      },
+    ],
+  },
+  {
+    uuid: 'JNBCC452452C26sdc1s5dcs',
+    name: 'Funclub 37',
+    category: 'Danse',
+    activity: 'Rock',
+    logo: 'https://picsum.photos/200',
+    description: `Une asso qui bouge, sauf en été.
+
+      Profitez d'une semaine gratuite supplémentaire !`,
+    availableCoupons: [
+      {
+        startDate: new Date('2022-09-01T00:00:00'),
+        endDate: new Date('2022-09-31T00:00:00'),
+        duration: null,
+      },
+    ],
+  },
 ];
