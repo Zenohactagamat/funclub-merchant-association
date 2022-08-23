@@ -1,7 +1,7 @@
 <h1>Choisissez une association</h1>
 
 <div class="associations">
-  <mat-card class="association-item" *ngFor="let association of associations">
+  <mat-card class="association-item" *ngFor="let association of associations" (click)="showDetails(association)">
     <mat-card-header>
       <img mat-card-avatar [src]="association.logo">
       <mat-card-title>{{association.name}}</mat-card-title>
@@ -12,10 +12,5 @@
         {{association.description}}
       </p>
     </mat-card-content>
-    <mat-card-footer>
-      <mat-card-actions>
-        <button mat-stroked-button color="primary" (click)="showDetails(association)">Voir le détail</button>
-      </mat-card-actions>
-    </mat-card-footer>
   </mat-card>
 </div>

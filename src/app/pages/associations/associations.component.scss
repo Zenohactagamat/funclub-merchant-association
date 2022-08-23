@@ -1,3 +1,8 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+$palette: mat.define-palette(mat.$indigo-palette);
+
 h1 {
   text-align: center;
 }
@@ -12,6 +17,16 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 0 2rem 1rem;
+
+  &:hover {
+    background-color: mat.get-color-from-palette($palette, 200);
+    color: #fff;
+    cursor: pointer;
+
+    mat-card-subtitle {
+      color: #fff;
+    }
+  }
 
   mat-card-actions {
     text-align: center;
