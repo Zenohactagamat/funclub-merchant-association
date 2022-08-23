@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Association } from '@app/core/interfaces';
 import { AssociationService } from '@app/core/services/association.service';
-import { AssociationDetailsDialogComponent } from './association-details-dialog.component';
+import { AssociationDetailsDialogComponent } from './association-details-dialog/association-details-dialog.component';
 
 @Component({
   templateUrl: './associations.component.html',
