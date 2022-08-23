@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { NgModule } from '@angular/core';
+import { CouponDurationPipe } from './pipes/coupon-duration.pipe';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [CouponDurationPipe],
+  imports: [CommonModule],
+  exports: [CouponDurationPipe],
 })
-export class CoreModule { }
+export class CoreModule {}
