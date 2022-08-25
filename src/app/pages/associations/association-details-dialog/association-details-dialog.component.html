@@ -1,7 +1,14 @@
-<img [src]="association.logo">
-<h1 mat-dialog-title>{{association.name}}</h1>
+<div mat-dialog-title>
+  <h1>{{association.name}}</h1>
+  <button mat-icon-button aria-label="Fermer" [mat-dialog-close]="null">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
 
 <div mat-dialog-content>
+  <div class="association-image">
+    <img [src]="association.logo">
+  </div>
   <h2>{{association.category}} - {{association.activity}}</h2>
 
   <h4>Description</h4>
@@ -33,6 +40,6 @@
 </div>
 
 <div mat-dialog-actions>
-  <button mat-button [mat-dialog-close]="association.uuid" cdkFocusInitial>Ok</button>
-  <button mat-button [mat-dialog-close]="null">Annuler</button>
+  <button mat-raised-button color="accent" [mat-dialog-close]="association.uuid" cdkFocusInitial>Choisir cette
+    activité</button>
 </div>
