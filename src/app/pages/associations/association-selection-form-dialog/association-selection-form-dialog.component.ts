@@ -15,11 +15,16 @@ export class AssociationSelectionFormDialogComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscriptionForm = this.fb.group({
+      couponDate: ['', Validators.required],
       merchantCode: ['', Validators.required],
       firstname: ['', [Validators.required]],
       lastname: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
     });
+  }
+
+  get couponDate() {
+    return this.subscriptionForm.get('couponDate');
   }
 
   get merchantCode() {

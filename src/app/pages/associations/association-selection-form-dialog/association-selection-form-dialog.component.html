@@ -15,6 +15,17 @@
   <h3>Association choisie : {{association.name}}</h3>
 
   <form class="subscription-form" [formGroup]="subscriptionForm">
+    <div class="coupon-date-container">
+      <label id="coupon-date-radio-group-label">Choisissez un créneau :</label>
+      <mat-radio-group formControlName="couponDate" aria-labelledby="coupon-date-radio-group-label">
+        <mat-radio-button class="coupon-date-radio" [value]="coupon.uuid"
+          *ngFor="let coupon of association.availableCoupons">
+          <app-coupon-date-display [coupon]="coupon"></app-coupon-date-display>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+
     <mat-form-field appearance="fill">
       <mat-label>Nom</mat-label>
       <input matInput formControlName="firstname">
