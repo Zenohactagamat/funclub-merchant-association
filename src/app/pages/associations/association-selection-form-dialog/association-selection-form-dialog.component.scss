@@ -1,3 +1,8 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+$palette: mat.define-palette(mat.$indigo-palette);
+
 .subscription-form {
   display: flex;
   flex-direction: column;
@@ -11,6 +16,11 @@
   h1 {
     margin: 0;
   }
+}
+
+h3 {
+  color: mat.get-color-from-palette($palette, 400);
+  font-weight: bold;
 }
 
 .mat-form-field {
