@@ -17,6 +17,15 @@ export const associationSamples = [
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
       },
+      {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaasbb',
+        startDate: new Date('2022-09-10T00:00:00'),
+        endDate: new Date('2022-09-15T00:00:00'),
+        duration: {
+          unit: CouponAvailabilityTimeUnit.HOUR,
+          quantity: 2,
+        },
+      },
     ],
   },
   {

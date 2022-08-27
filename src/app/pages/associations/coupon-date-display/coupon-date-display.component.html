@@ -1,13 +1,20 @@
 <!-- Show information for start and end -->
-du {{coupon.startDate | date: 'longDate'}} au {{coupon.endDate | date: 'longDate'}}
+<ng-template #dateInfo>du {{coupon.startDate | date: 'longDate'}} au {{coupon.endDate | date: 'longDate'}}</ng-template>
 
 <!-- Show information for duration with given dates -->
 <ng-container *ngIf="coupon.duration; else noDuration">
-  , pour une période de {{coupon.duration.quantity}} {{coupon.duration.unit | couponDuration:
+  <ng-container *ngTemplateOutlet="dateInfo"></ng-container>, pour une durée de {{coupon.duration.quantity}}
+  {{coupon.duration.unit | couponDuration:
   coupon.duration.quantity}}
+  <mat-icon class="info" aria-hidden="false"
+    aria-label="Vous pouvez participer à l'activité autant de fois que désiré pour la durée indiquée à compter de la date de votre choix dans le créneau indiqué."
+    fontIcon="help"
+    matTooltip="Vous pouvez participer à l'activité autant de fois que désiré pour la durée indiquée à compter de la date de votre choix dans le créneau indiqué."
+    matTooltipPosition="right"></mat-icon>
 </ng-container>
 
 <ng-template #noDuration>
+  <ng-container *ngTemplateOutlet="dateInfo"></ng-container>
   <mat-icon class="info" aria-hidden="false"
     aria-label="Vous pouvez participer à l'activité autant de fois que désiré jusqu'à la date de fin." fontIcon="help"
     matTooltip="Vous pouvez participer à l'activité autant de fois que désiré jusqu'à la date de fin."
