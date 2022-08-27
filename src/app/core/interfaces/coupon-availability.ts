@@ -1,9 +1,10 @@
 import { CouponDuration } from './coupon-duration';
+import { EntityWithUuid } from './entity-with-uuid';
 
 /**
  * Coupon availability
  */
-export interface couponAvailability {
+export interface CouponAvailability extends EntityWithUuid {
   /** @var startDate - start date */
   startDate: Date;
   /** @var endDate - end date */

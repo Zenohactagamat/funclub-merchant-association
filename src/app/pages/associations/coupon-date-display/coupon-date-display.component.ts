@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { couponAvailability } from '@app/core/interfaces';
+import { CouponAvailability } from '@app/core/interfaces';
 
 @Component({
   selector: 'app-coupon-date-display',
@@ -7,7 +7,7 @@ import { couponAvailability } from '@app/core/interfaces';
   styleUrls: ['./coupon-date-display.component.scss'],
 })
 export class CouponDateDisplayComponent {
-  @Input() coupon: couponAvailability;
+  @Input() coupon: CouponAvailability;
 
   constructor() {}
 }

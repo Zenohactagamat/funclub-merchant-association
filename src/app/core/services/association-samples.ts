@@ -1,3 +1,5 @@
+import { CouponAvailabilityTimeUnit } from '../interfaces/coupon-availability-time-unit';
+
 export const associationSamples = [
   {
     uuid: 'JNBCCDNJNKLJC26sdc1s5dcs',
@@ -10,6 +12,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -27,6 +30,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -44,6 +48,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -61,6 +66,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -78,6 +84,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -95,6 +102,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -112,6 +120,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,
@@ -129,6 +138,7 @@ export const associationSamples = [
       Profitez d'une semaine gratuite supplémentaire !`,
     availableCoupons: [
       {
+        uuid: 'JNBCCDNJNKLJC26sdc1s5dcaas',
         startDate: new Date('2022-09-01T00:00:00'),
         endDate: new Date('2022-09-31T00:00:00'),
         duration: null,

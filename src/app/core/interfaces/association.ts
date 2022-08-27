@@ -1,4 +1,4 @@
-import { couponAvailability } from './coupon-availability';
+import { CouponAvailability } from './coupon-availability';
 import { EntityWithUuid } from './entity-with-uuid';
 
 /**
@@ -16,5 +16,5 @@ export interface Association extends EntityWithUuid {
   /** @var description - Association description */
   description: string;
   /** @var availableCoupons - Array of available coupon information */
-  availableCoupons: couponAvailability[];
+  availableCoupons: CouponAvailability[];
 }
