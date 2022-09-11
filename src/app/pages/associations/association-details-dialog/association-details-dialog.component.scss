@@ -1,0 +1,22 @@
+.association-image {
+  margin: 0 0 1rem;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.mat-dialog-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.mat-dialog-actions {
+  justify-content: center;
+}

@@ -1,0 +1,30 @@
+<div mat-dialog-title>
+  <h1>{{association.name}}</h1>
+  <button mat-icon-button aria-label="Fermer" [mat-dialog-close]="null">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <div class="association-image">
+    <img [src]="association.logo">
+  </div>
+  <h2>{{association.category}} - {{association.activity}}</h2>
+
+  <h4>Description</h4>
+  <p>
+    {{association.description}}
+  </p>
+
+  <h4>Disponibilités</h4>
+  <ul class="available-coupons">
+    <li *ngFor="let coupon of association.availableCoupons">
+      <app-coupon-date-display [coupon]="coupon"></app-coupon-date-display>
+    </li>
+  </ul>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent" [mat-dialog-close]="association.uuid" cdkFocusInitial>Choisir cette
+    activité</button>
+</div>
