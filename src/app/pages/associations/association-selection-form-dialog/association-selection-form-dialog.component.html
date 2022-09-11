@@ -1,0 +1,84 @@
+<div mat-dialog-title>
+  <h1>Mon inscription</h1>
+  <button mat-icon-button aria-label="Fermer" [mat-dialog-close]="null">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <h2>1. Je remplis le formulaire suivant</h2>
+
+  <p>
+    Ces informations ne sont pas stockées et seront uniquement transmises à l'association par email.
+  </p>
+
+  <h3>Association choisie : {{association.name}}</h3>
+
+  <form class="subscription-form" [formGroup]="subscriptionForm">
+    <div class="coupon-date-container">
+      <label id="coupon-date-radio-group-label">Choisissez un créneau :</label>
+      <mat-radio-group formControlName="couponDate" aria-labelledby="coupon-date-radio-group-label">
+        <mat-radio-button class="coupon-date-radio" [value]="coupon.uuid"
+          *ngFor="let coupon of association.availableCoupons">
+          <app-coupon-date-display [coupon]="coupon"></app-coupon-date-display>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="firstname">
+      <mat-error *ngIf="firstname?.hasError('required')">
+        Nom est <strong>obligatoire</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Prénom</mat-label>
+      <input matInput formControlName="lastname">
+      <mat-error *ngIf="lastname?.hasError('required')">
+        Prénom est <strong>obligatoire</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+      <mat-error *ngIf="email?.hasError('email') && !email?.hasError('required')">
+        Addresse email invalide
+      </mat-error>
+      <mat-error *ngIf="email?.hasError('required')">
+        Email est <strong>obligatoire</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Code commerçant</mat-label>
+      <input matInput formControlName="merchantCode">
+      <mat-error *ngIf="merchantCode?.hasError('required')">
+        Code commerçant est <strong>obligatoire</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <div class="form-button">
+      <button type="submit" [disabled]="!subscriptionForm.valid" mat-raised-button color="accent"
+        cdkFocusInitial>Valider</button>
+    </div>
+  </form>
+
+  <h2>2. Je conserve mon email de confirmation</h2>
+
+  <p>
+    Conservez (ou imprimez) l'email de confirmation reçu suite à la validation du formulaire.<br>
+    En cas de non réception, vérifiez bien vos emails indésirables !
+  </p>
+
+  <h2>3. Je me rends aux locaux de l'association</h2>
+
+  <p>Rendez-vous dans les locaux de votre association pendant le créneau sélectionné et présentez votre email !</p>
+</div>
+
+<div mat-dialog-actions>
+  <button type="submit" mat-raised-button color="basic" [mat-dialog-close]="null" cdkFocusInitial>Fermer</button>
+</div>

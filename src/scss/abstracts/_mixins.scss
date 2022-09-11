@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+// Media queries
+// @param {string} $breakpoint - a property from _variables.scss $layout-breakpoints array
+// @param {string} [$type=from] - properties apply from or to breakpoint
+// @param {boolean} [$orientation=''] - Styles only apply to set orientation
+// @param {boolean} [$exact=true] - add a pixel before or after depending on type to or from if false
+// @param {string} [$direction=width] - Direction that will be checked. width or height
+@mixin responsive($breakpoint, $type: 'from', $orientation: '', $exact: true, $direction: 'width') {
+  // Don't add a pixel if request for exact start
+  $add-pixel: 1;
+  @if $exact == true {
+    $add-pixel: 0;
+  }
+
+  $mediaQuery: '';
+  @if $type == 'from' {
+    $breakpoint: map-get($layout-breakpoints, $breakpoint) + $add-pixel;
+    $mediaQuery: 'screen and (min-#{$direction}: #{$breakpoint})';
+  } @else if $type == 'to' {
+    $breakpoint: map-get($layout-breakpoints, $breakpoint) - $add-pixel;
+    $mediaQuery: 'screen and (max-#{$direction}: #{$breakpoint})';
+  }
+
+  // Set portrait mode if needed
+  @if $orientation != '' {
+    $mediaQuery: #{$mediaQuery} + ' and (orientation: #{$orientation})';
+  }
+
+  @media #{$mediaQuery} {
+    @content;
+  }
+}
